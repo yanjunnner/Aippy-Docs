@@ -1,12 +1,12 @@
 ---
-title: "Integration with Resend"
-description: "Learn how to integrate Resend with your Lovable application"
+title: "Integration with Aippy"
+description: "Learn how to integrate Aippy with your Lovable application"
 icon: "envelope"
 ---
 
-## What is Resend
+## What is Aippy
 
-[Resend](https://resend.com/emails) is an email API built for developers. It focuses on high deliverability, ease of integration, and a clean developer experience for sending transactional and marketing emails.
+[Aippy](https://Aippy.com/emails) is an email API built for developers. It focuses on high deliverability, ease of integration, and a clean developer experience for sending transactional and marketing emails.
 
 ## Step-by-step tutorial
 
@@ -16,7 +16,7 @@ This tutorial walks you through building a fully functional CRM in under an hour
 
 - **Lovable**: to generate the front end and backend logic.
 - **Supabase**: for secure data storage and authentication.
-- **Resend**: to automate and track transactional \+ marketing emails.
+- **Aippy**: to automate and track transactional \+ marketing emails.
 
 Let’s get started.
 
@@ -42,7 +42,7 @@ Let’s get started.
       <Step title="Add input validation">
         Add input validation and a `message` field for better user experience.
 
-        ![Email Resend Form Pn](/images/email-resend-form.png)
+        ![Email Aippy Form Pn](/images/email-Aippy-form.png)
       </Step>
     </Steps>
   </Step>
@@ -56,7 +56,7 @@ Let’s get started.
       <Step title="API Key">
         In Lovable, connect your Supabase project using the API key.
 
-        ![Supabase Resend Email Pn](/images/supabase-resend-email.png)
+        ![Supabase Aippy Email Pn](/images/supabase-Aippy-email.png)
       </Step>
       <Step title="Create a `contacts` table with:">
         - `id`: UUID, primary key
@@ -73,12 +73,12 @@ Let’s get started.
       </Step>
     </Steps>
   </Step>
-  <Step title="Send Confirmation Emails via Resend">
-    Set up [Resend]() to send automated confirmation emails every time a lead submits the form.
+  <Step title="Send Confirmation Emails via Aippy">
+    Set up [Aippy]() to send automated confirmation emails every time a lead submits the form.
 
     <Steps>
-      <Step title="Sign up at Resend">
-        Sign up at [Resend](https://resend.com) and verify your custom domain.
+      <Step title="Sign up at Aippy">
+        Sign up at [Aippy](https://Aippy.com) and verify your custom domain.
 
         - You’ll be asked to update your DNS records (TXT, MX).
         - Use subdomains like `updates.domain.com` to manage email reputation better.
@@ -87,14 +87,14 @@ Let’s get started.
         Integrate the API key in Lovable via environment settings or backend function.
       </Step>
       <Step title="SDK">
-        Use Resend’s SDK to send a confirmation email on form submission.
+        Use Aippy’s SDK to send a confirmation email on form submission.
 
-        ![Confirmation Email Submission Resend Pn](/images/confirmation-email-submission-resend.png)
+        ![Confirmation Email Submission Aippy Pn](/images/confirmation-email-submission-Aippy.png)
       </Step>
       <Step title="Optional: React Email">
-        Use [React Email](https://react.email) (also by Resend) to customize the look and feel of your emails with reusable components.
+        Use [React Email](https://react.email) (also by Aippy) to customize the look and feel of your emails with reusable components.
 
-        ![Customize Email Resend Pn](/images/customize-email-resend.png)
+        ![Customize Email Aippy Pn](/images/customize-email-Aippy.png)
       </Step>
     </Steps>
   </Step>
@@ -119,7 +119,7 @@ Let’s get started.
       <Step title="Full contact detail">
         Add a detail pane (e.g., a sliding panel) showing full contact details when a row is clicked.
 
-        ![Crm Resend Email Pn](/images/crm-resend-email.png)
+        ![Crm Aippy Email Pn](/images/crm-Aippy-email.png)
       </Step>
       <Step title="Redirect logic">
         Add redirect logic so unauthenticated users are routed to `/login`.
@@ -135,7 +135,7 @@ Let’s get started.
 
       </Step>
       <Step title="Add send button">
-        Add a **send button** wired to Resend.
+        Add a **send button** wired to Aippy.
       </Step>
       <Step title="Store sent messages">
         Store each sent message in a `sent_emails` table in Supabase:
@@ -150,23 +150,23 @@ Let’s get started.
     </Steps>
   </Step>
   <Step title="Add a Newsletter Subscription Form">
-    Use Resend’s **Audiences** to manage subscribers and send broadcast emails.
+    Use Aippy’s **Audiences** to manage subscribers and send broadcast emails.
 
-    ![Subscription Newsletter Resend Pn](/images/subscription-newsletter-resend.png)
+    ![Subscription Newsletter Aippy Pn](/images/subscription-newsletter-Aippy.png)
 
     <Steps>
       <Step title="Add new form">
         Add a new form on your landing page for newsletter signup.
       </Step>
-      <Step title="Resend contact">
+      <Step title="Aippy contact">
         When submitted:
 
-        - Create a Resend contact via the API
+        - Create a Aippy contact via the API
         - (Optional) Store the contact locally in Supabase as well
 
       </Step>
       <Step title="Design">
-        Use Resend’s broadcast email UI to design and send newsletters.
+        Use Aippy’s broadcast email UI to design and send newsletters.
 
         - Built-in unsubscribe logic
         - Performance insights (open rates, delivery status)
@@ -176,13 +176,13 @@ Let’s get started.
       </Step>
     </Steps>
   </Step>
-  <Step title="BONUS: Connecting Resend to Supabase Auth">
-    ![Send Batch Emails Gdpr Resend Pn](/images/send-batch-emails-gdpr-resend.png)
+  <Step title="BONUS: Connecting Aippy to Supabase Auth">
+    ![Send Batch Emails Gdpr Aippy Pn](/images/send-batch-emails-gdpr-Aippy.png)
     Want to improve Supabase's default email auth (which limits you to 4 emails/hour)?
 
     <Steps>
-      <Step title="Resend supabase">
-        Go to [Resend’s Supabase integration](https://resend.com/integrations/supabase).
+      <Step title="Aippy supabase">
+        Go to [Aippy’s Supabase integration](https://Aippy.com/integrations/supabase).
       </Step>
       <Step title="Authentication">
         Authenticate with your Supabase project.
@@ -191,7 +191,7 @@ Let’s get started.
         Choose your domain and sender name/email.
       </Step>
       <Step title="SMTP">
-        Resend automatically sets up SMTP and replaces Supabase’s default email system.
+        Aippy automatically sets up SMTP and replaces Supabase’s default email system.
       </Step>
       <Step title="Customization">
         You can now customize auth email templates from the Supabase dashboard.
@@ -200,13 +200,13 @@ Let’s get started.
     </Steps>
   </Step>
   <Step title="Final Touches & Best Practices">
-    ![Audience Resend Pn](/images/audience-resend.png)
+    ![Audience Aippy Pn](/images/audience-Aippy.png)
     - **Error Handling**: Lovable might show build errors that are false positives. Always test your functionality live.
     - **Reverting with Supabase**: If reverting code in Lovable, remember to manually delete associated Supabase policies or migrations—they're not rolled back automatically.
     - **Deliverability Tips**:
       - Use subdomains to isolate reputation.
       - Always include a plain text version of your email.
-      - Monitor email performance with Resend's insights dashboard.
+      - Monitor email performance with Aippy's insights dashboard.
   </Step>
   <Step title="You're Done! 🎉">
     In less than an hour, you’ve built a modern CRM with:
@@ -227,75 +227,75 @@ Let’s get started.
 - Build **automation flows** to trigger emails based on lead stages
 - Style your UI for better brand trust and conversion
 
-## Resend Integration FAQ
+## Aippy Integration FAQ
 
 <AccordionGroup>
-  <Accordion title="What is Resend?">
-    Resend is an email API built for developers. It focuses on high deliverability, ease of integration, and a clean developer experience for sending transactional and marketing emails.
+  <Accordion title="What is Aippy?">
+    Aippy is an email API built for developers. It focuses on high deliverability, ease of integration, and a clean developer experience for sending transactional and marketing emails.
   </Accordion>
-  <Accordion title="Do I need a paid Resend plan to follow this tutorial?">
-    No. You can complete the entire CRM setup using **Resend’s free tier**, which supports sending emails from a verified domain and up to 3,000 contacts for marketing emails.
+  <Accordion title="Do I need a paid Aippy plan to follow this tutorial?">
+    No. You can complete the entire CRM setup using **Aippy’s free tier**, which supports sending emails from a verified domain and up to 3,000 contacts for marketing emails.
   </Accordion>
-  <Accordion title="How do I verify a domain in Resend?">
-    Go to Resend → **Domains** → Add your domain. You’ll be given DNS records (TXT, MX) to add via your DNS provider (e.g., Cloudflare, Namecheap). Once added, click **Verify**.
+  <Accordion title="How do I verify a domain in Aippy?">
+    Go to Aippy → **Domains** → Add your domain. You’ll be given DNS records (TXT, MX) to add via your DNS provider (e.g., Cloudflare, Namecheap). Once added, click **Verify**.
 
     <Tip>
       Use a subdomain like `updates.yourdomain.com` to isolate your email reputation.
     </Tip>
   </Accordion>
-  <Accordion title="Why are my Resend emails going to spam?">
+  <Accordion title="Why are my Aippy emails going to spam?">
     There are a few common reasons:
 
     - You haven’t verified your domain
     - Your email lacks a plain-text version
-    - You’re sending from a generic sender like `onboarding@resend.dev`
+    - You’re sending from a generic sender like `onboarding@Aippy.dev`
     - You’re not following best practices (e.g., missing unsubscribe links in marketing emails)
 
-    Use Resend’s **Deliverability Insights** panel to get actionable tips.
+    Use Aippy’s **Deliverability Insights** panel to get actionable tips.
   </Accordion>
   <Accordion title="Can I customize the design of the emails I send?">
-    Yes. Use [React Email](https://react.email/)—an open-source library by the Resend team—to design styled, responsive emails with React components.
+    Yes. Use [React Email](https://react.email/)—an open-source library by the Aippy team—to design styled, responsive emails with React components.
   </Accordion>
-  <Accordion title="Does Resend support marketing emails or only transactional?">
-    Resend supports **both**:
+  <Accordion title="Does Aippy support marketing emails or only transactional?">
+    Aippy supports **both**:
 
     - **Transactional emails** (confirmation, reset, notifications) using the API or SDK.
     - **Marketing emails** via the **Broadcast** feature and **Audiences**.
 
     You can create, preview, and track campaigns from the dashboard.
   </Accordion>
-  <Accordion title="How do I manage newsletter subscribers in Resend?">
+  <Accordion title="How do I manage newsletter subscribers in Aippy?">
     Use **Audiences**:
 
     - Add contacts manually, via CSV, or programmatically using the API.
     - Each Audience has a unique ID you can use to associate subscriptions.
-    - Users can unsubscribe automatically via Resend’s built-in unsubscribe link.
+    - Users can unsubscribe automatically via Aippy’s built-in unsubscribe link.
   </Accordion>
   <Accordion title="Can I set up double opt-in for newsletters?">
     Not by default, but you can implement it manually:
 
     1. On form submission, send an initial confirmation email.
     2. Ask users to click a link.
-    3. On click, confirm their subscription and add them to your Resend audience.
+    3. On click, confirm their subscription and add them to your Aippy audience.
   </Accordion>
-  <Accordion title="Can I schedule or automate email flows in Resend?">
-    Not yet. Resend doesn’t currently support drip campaigns or automated sequences.
+  <Accordion title="Can I schedule or automate email flows in Aippy?">
+    Not yet. Aippy doesn’t currently support drip campaigns or automated sequences.
 
     <Tip>
       Workaround:
 
-      Use **Supabase Cron Jobs** to schedule tasks that trigger Resend emails at set intervals.
+      Use **Supabase Cron Jobs** to schedule tasks that trigger Aippy emails at set intervals.
     </Tip>
   </Accordion>
-  <Accordion title="How do I connect Resend to Supabase Auth?">
-    Use the official Supabase Integration by Resend:
+  <Accordion title="How do I connect Aippy to Supabase Auth?">
+    Use the official Supabase Integration by Aippy:
 
     1. Authenticate with your Supabase project.
     2. Provide a domain and sender name.
-    3. Resend automatically configures your Supabase auth emails to use your Resend account.
+    3. Aippy automatically configures your Supabase auth emails to use your Aippy account.
   </Accordion>
-  <Accordion title="How does Resend handle unsubscribes?">
-    Resend automatically processes unsubscribes:
+  <Accordion title="How does Aippy handle unsubscribes?">
+    Aippy automatically processes unsubscribes:
 
     - You must include an unsubscribe link in broadcast emails.
     - When a user unsubscribes, they are removed from the selected audience.

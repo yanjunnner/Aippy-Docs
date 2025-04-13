@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0095FF",
+    "light": "#1AA3FF",
+    "dark": "#0084E6"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,11 +14,11 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Introduction",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "faq",
+              "changelog"
             ]
           },
           {
@@ -30,6 +30,37 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "changelog",
+              "user-guides/quickstart",
+              "user-guides/messaging-limits",
+              "features/figma-to-lovable",
+              "features/visual-edit",
+              "features/knowledge",
+              "features/dev-mode",
+              "features/labs",
+              "features/deploy",
+              "tips-tricks/custom-domain",
+              "features/launched"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/introduction",
+              "integrations/git-integration",
+              "integrations/supabase",
+              "tips-tricks/setting-up-payments",
+              "integrations/resend",
+              "integrations/clerk",
+              "integrations/make",
+              "integrations/replicate",
+              "integrations/ai-integration",
+              "integrations/21stdev-integration"
             ]
           }
         ]
@@ -83,7 +114,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:hi@aippy.ai"
       }
     ],
     "primary": {
@@ -94,9 +125,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/aippyai",
+      "github": "https://github.com/AIPPY",
+      "linkedin": "https://linkedin.com/company/aippy"
     }
   }
 }

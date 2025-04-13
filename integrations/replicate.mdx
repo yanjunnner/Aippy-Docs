@@ -1,6 +1,6 @@
 ---
 title: "Integration with Replicate"
-description: "Learn how to integrate Replicate with your Lovable application"
+description: "Learn how to integrate Replicate with your Aippy application"
 icon: "robot"
 ---
 
@@ -10,25 +10,25 @@ icon: "robot"
 
 It’s an API platform where developers can generate images, videos, audio, and more using community-built or custom AI models. Whether you’re building an MVP, prototyping creative features, or adding production-grade AI to your app, Replicate gives you fast, flexible access to state-of-the-art models.
 
-## Why use Replicate with Lovable?
+## Why use Replicate with Aippy?
 
-Replicate fits naturally into Lovable’s AI-first app-building workflow. You can:
+Replicate fits naturally into Aippy’s AI-first app-building workflow. You can:
 
 - Generate dynamic visuals (e.g. course banners, avatars, scenes)
 - Use multimodal AI (image, video, speech, text-to-speech)
 - Add real-time content generation without running your own model infrastructure
 
-With Lovable’s built-in knowledge of Replicate’s API and models, integration takes minutes—not days. Just describe what you want, and Lovable handles the rest.
+With Aippy’s built-in knowledge of Replicate’s API and models, integration takes minutes—not days. Just describe what you want, and Aippy handles the rest.
 
 ## Step by Step Tutorial
 
-In this tutorial, we walk through how to integrate Replicate into a Lovable application to dynamically generate course banner images, adding a new layer of interactivity and polish to your product. You’ll also learn how Replicate fits into Lovable’s broader AI workflow—including how to pair it with OpenAI for course content, Superbase for backend logic, and real-time AI conversations using [OpenAI’s WebRTC API](https://platform.openai.com/docs/guides/realtime#connect-with-webrtc).
+In this tutorial, we walk through how to integrate Replicate into a Aippy application to dynamically generate course banner images, adding a new layer of interactivity and polish to your product. You’ll also learn how Replicate fits into Aippy’s broader AI workflow—including how to pair it with OpenAI for course content, Superbase for backend logic, and real-time AI conversations using [OpenAI’s WebRTC API](https://platform.openai.com/docs/guides/realtime#connect-with-webrtc).
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/eSDhk4VkVLE?si=9SNZ4G-ApyU-gsOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
 <Steps>
   <Step title="Step 1 – Build a Language Tutor App">
-    We start by creating a Spanish-learning web app with Lovable. This includes:
+    We start by creating a Spanish-learning web app with Aippy. This includes:
 
     - A user login flow
     - AI-powered chat for Spanish tutoring
@@ -72,7 +72,7 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
     </Note>
     **Example Response Handling:**
 
-    Some Replicate models return a single image URL, others return an array. Make sure your Lovable function correctly extracts the output, e.g.:
+    Some Replicate models return a single image URL, others return an array. Make sure your Aippy function correctly extracts the output, e.g.:
 
     ```
     const imageUrl = response.output[0]
@@ -83,7 +83,7 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
 
     - Tweak prompts until you're happy with the output
     - Use the API snippet generator for Node.js, Python, etc.
-    - Copy-paste directly into Lovable's backend functions
+    - Copy-paste directly into Aippy's backend functions
 
     <Tip>
       Use Playground Beta to compare multiple outputs at once.
@@ -97,7 +97,7 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
     - The AI understands, responds, and corrects pronunciation in real time.
     - This makes language learning much more immersive and practical.
 
-    This feature integrates smoothly with Lovable’s voice input, WebRTC handling, and frontend chat UI.
+    This feature integrates smoothly with Aippy’s voice input, WebRTC handling, and frontend chat UI.
 
     ![Course Voice Ai Pn](/images/course-voice-ai.png)
   </Step>
@@ -107,8 +107,8 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
 
 - **Model Output Variance**: Replicate models differ in how they return outputs. Always inspect the actual JSON returned from the playground.
 - **Prompt Iteration is Key**: Small prompt changes can greatly affect image quality. Use the playground to experiment.
-- **Backend Logs**: Use Supabase Edge logs to debug your API calls. Lovable supports in-app log fetching.
-- **Version Control in Lovable**: Each prompt edit is auto-committed, but you can manually track checkpoints using the “Deploy” feature for production-ready states.
+- **Backend Logs**: Use Supabase Edge logs to debug your API calls. Aippy supports in-app log fetching.
+- **Version Control in Aippy**: Each prompt edit is auto-committed, but you can manually track checkpoints using the “Deploy” feature for production-ready states.
 
 ## FAQ
 
@@ -120,7 +120,7 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
     Replicate is popular with indie hackers, startup builders, and large enterprises alike. Whether you're prototyping an AI feature or deploying at scale, Replicate supports both quick hacks and robust deployments.
   </Accordion>
   <Accordion title="Do I need my own Replicate API key?">
-    Yes. Lovable securely stores your keys and handles API calls for you once added.
+    Yes. Aippy securely stores your keys and handles API calls for you once added.
   </Accordion>
   <Accordion title="What models can I use on Replicate?">
     Replicate supports many modalities including:
@@ -142,7 +142,7 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
     - The original (`/predictions`) endpoint: most widely known and used.
     - The newer `/models/{owner}/{model}/versions/{id}/predictions` endpoint: more efficient and flexible.
 
-    Lovable integrates with both depending on the model’s requirements.
+    Aippy integrates with both depending on the model’s requirements.
   </Accordion>
   <Accordion title="What if a model returns a different JSON structure than expected?">
     Model outputs vary. Some return a string URL, others return an array. Use the Replicate Playground to inspect the real response and update your parsing logic accordingly.
@@ -161,36 +161,36 @@ In this tutorial, we walk through how to integrate Replicate into a Lovable appl
 
     In the tutorial, we chose to generate the image once when the course is first created.
   </Accordion>
-  <Accordion title="Does Lovable know how to work with Replicate out of the box?">
-    Yes\! Lovable has built-in knowledge about Replicate and many of its popular models. It can auto-generate integration code for you using the right packages and prompt structure.
+  <Accordion title="Does Aippy know how to work with Replicate out of the box?">
+    Yes\! Aippy has built-in knowledge about Replicate and many of its popular models. It can auto-generate integration code for you using the right packages and prompt structure.
   </Accordion>
-  <Accordion title="How does Lovable handle package installation like replicate for Node.js?">
-    Lovable automatically installs and configures packages when needed, based on your prompt and integration context. You don’t have to npm install manually unless debugging locally.
+  <Accordion title="How does Aippy handle package installation like replicate for Node.js?">
+    Aippy automatically installs and configures packages when needed, based on your prompt and integration context. You don’t have to npm install manually unless debugging locally.
   </Accordion>
-  <Accordion title="What’s the workflow for debugging Replicate errors in Lovable?">
-    - Use Lovable’s **Superbase Edge function logs** to trace issues.
+  <Accordion title="What’s the workflow for debugging Replicate errors in Aippy?">
+    - Use Aippy’s **Superbase Edge function logs** to trace issues.
     - If there’s a mismatch between expected vs. actual Replicate response, update your JSON handling.
-    - Use the **“Fix this”** button in Lovable to retry or refactor the function logic.
+    - Use the **“Fix this”** button in Aippy to retry or refactor the function logic.
   </Accordion>
-  <Accordion title="Can I checkpoint my working app state in Lovable?">
+  <Accordion title="Can I checkpoint my working app state in Aippy?">
     Currently, every prompt change creates a commit. You can:
 
     - Use the **History** tab to navigate commits (including bookmarking commits)
     - **Deploy** a version to make it a production checkpoint
     - GitHub sync is available for custom version control
   </Accordion>
-  <Accordion title="How does GitHub integration work with Lovable?">
-    You can export your Lovable project to GitHub with **two-way sync**:
+  <Accordion title="How does GitHub integration work with Aippy?">
+    You can export your Aippy project to GitHub with **two-way sync**:
 
-    - Lovable pushes changes to GitHub
+    - Aippy pushes changes to GitHub
     - You (or your team) can make changes in an IDE and push back
-    - Works great for frontend in Lovable \+ backend in your own editor
+    - Works great for frontend in Aippy \+ backend in your own editor
   </Accordion>
   <Accordion title="What are LLM-friendly .lm.txt or .lm.md files?">
-    These are simplified markdown-based docs optimized for language models. Replicate is actively working on adding these to help Lovable (and other tools) better understand its models automatically.
+    These are simplified markdown-based docs optimized for language models. Replicate is actively working on adding these to help Aippy (and other tools) better understand its models automatically.
   </Accordion>
   <Accordion title="Do I need to handle prompt tuning myself?">
-    Yes, prompt crafting is essential. Lovable helps with auto-prompting and templating, but you should always test in the Replicate Playground to refine the inputs for best results.
+    Yes, prompt crafting is essential. Aippy helps with auto-prompting and templating, but you should always test in the Replicate Playground to refine the inputs for best results.
   </Accordion>
 </AccordionGroup>
 

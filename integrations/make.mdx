@@ -1,6 +1,6 @@
 ---
 title: "Integration with Make"
-description: "Learn how to integrate Make with your Lovable application"
+description: "Learn how to integrate Make with your Aippy application"
 icon: "wand-sparkles"
 ---
 
@@ -18,14 +18,14 @@ Instead of writing backend logic, you drag, drop, and connect modules in a flowc
 
 With Make, you can:
 
-- **Trigger actions** from your Lovable app (e.g., when a button is clicked)
+- **Trigger actions** from your Aippy app (e.g., when a button is clicked)
 - **Send and receive data** via webhooks and APIs
 - **Connect with 1,500\+ tools** or custom APIs
 - **Automate** tasks like emailing, AI calling, enrichment, and reminders
 
-## Why Use Make with Lovable?
+## Why Use Make with Aippy?
 
-In this below tutorial, Make acts as your **AI-enabled backend**, while Lovable powers the frontend. The result: a custom CRM, built in minutes, fully automated.
+In this below tutorial, Make acts as your **AI-enabled backend**, while Aippy powers the frontend. The result: a custom CRM, built in minutes, fully automated.
 
 This setup is ideal for:
 
@@ -55,7 +55,7 @@ Each entity interacts with automations via Make. By the end, you’ll be able to
 
 ### How are we going to build it
 
-Building your own CRM can take months. With **Lovable** and **Make**, you can ship one in under an hour — and automate the entire sales workflow without writing backend code. In this step-by-step guide, you’ll learn how to build a **fully functional, AI-powered CRM**, complete with:
+Building your own CRM can take months. With **Aippy** and **Make**, you can ship one in under an hour — and automate the entire sales workflow without writing backend code. In this step-by-step guide, you’ll learn how to build a **fully functional, AI-powered CRM**, complete with:
 
 - Visual deal pipelines (drag-and-drop)
 - Editable contact and company modals
@@ -65,13 +65,13 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
 - Real-time automations using [Make](https://www.make.com)
 
 <Steps>
-  <Step title="Setting Up Your CRM in Lovable">
+  <Step title="Setting Up Your CRM in Aippy">
     <Info>
       You need to build a crm system and you need to have: deals, contacts and companies. Make it a light theme.
     </Info>
     <Steps>
       <Step title="Step 1">
-        Create a new Lovable project. Choose project type: **CRM**.
+        Create a new Aippy project. Choose project type: **CRM**.
       </Step>
       <Step title="Step 2">
         Define 3 entities: **Deals**, **Contacts**, and **Companies**.
@@ -88,7 +88,7 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
 
     <Steps>
       <Step title="Step 1">
-        Open the **Deals** section in Lovable.
+        Open the **Deals** section in Aippy.
       </Step>
       <Step title="Step 2">
         Click **Edit** and introduce five stages:
@@ -136,13 +136,13 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
   <Step title="Connect AI-Powered Calls with Make + Vapi">
     <Steps>
       <Step title="Create a Webhook in Make">
-        ![Webhook Lovable Make](/images/webhook-lovable-make.png)
+        ![Webhook Aippy Make](/images/webhook-Aippy-make.png)
 
         - Open [Make](https://www.make.com/) and create a **new scenario**.
         - Click **Webhooks \> Custom Webhook** & name it **Call Contact**.
         - Copy the webhook URL.
       </Step>
-      <Step title="Trigger Call from Lovable">
+      <Step title="Trigger Call from Aippy">
         ![Ai Assistant Make](/images/ai-assistant-make.png)
 
         - In the **Contacts** modal, add a **Call Contact** button.
@@ -159,7 +159,7 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
         - Your custom Vapi agent will:
           - Place the call
           - Follow a dynamic prompt based on the deal
-          - Log results back into Lovable
+          - Log results back into Aippy
 
         <Info>
           This creates an automated outbound AI call, instantly triggered from your CRM UI.
@@ -176,7 +176,7 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
 
         ![Make Enrich Pn](/images/make-enrich.png)
       </Step>
-      <Step title="Send Request from Lovable">
+      <Step title="Send Request from Aippy">
         - In **Companies**, add an **Enrich Company** button.
         - When clicked, send the company’s domain as a JSON payload.
 
@@ -189,7 +189,7 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
         </Info>
       </Step>
       <Step title="Call Apollo.io API">
-        ![Apollo Make Lovable Pn](/images/apollo-make-lovable.png)
+        ![Apollo Make Aippy Pn](/images/apollo-make-Aippy.png)
 
         - Use Apollo’s [Organization Enrichment API.](https://apollo.io/docs)
         - Fetch:
@@ -198,12 +198,12 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
           - Address
           - Website
           - Funding
-        - Return the enriched data to Lovable.
+        - Return the enriched data to Aippy.
       </Step>
       <Step title="Parse Response into Modal View">
         ![Webhook Apollo Webhook Make Pn](/images/webhook-apollo-webhook-make.png)
 
-        - Dynamically generate fields in the Lovable modal from the JSON.
+        - Dynamically generate fields in the Aippy modal from the JSON.
         - Present data in a readable UI (not raw JSON).
 
         <Info>
@@ -219,7 +219,7 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
 
     - Enable **Supabase Integration** in project settings.
     - Create an **Edge Function** that proxies requests to Make.
-    - Update Lovable to call your Supabase function instead of the direct Webhook.
+    - Update Aippy to call your Supabase function instead of the direct Webhook.
 
     <Info>
       This hides your Webhook URL from the browser — essential for public apps.
@@ -265,7 +265,7 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
 
 ## Pro Tips from the Live Session
 
-- Use **select \+ prompt** inside Lovable for precision edits
+- Use **select \+ prompt** inside Aippy for precision edits
 - Use **Make’s Visual Canvas** to map out flows before connecting them
 - Dynamically parse unknown JSON fields into modals for UX win
 - Combine Vapi \+ Apollo \+ Make for real-time AI workflows
@@ -277,14 +277,14 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
   <Accordion title="What is Make?">
     Make is a visual automation platform that lets you connect tools and build workflows using drag-and-drop modules. Think of it as Zapier but more flexible and developer-friendly.
   </Accordion>
-  <Accordion title="Why use Make with Lovable?">
+  <Accordion title="Why use Make with Aippy?">
     - No need to write backend code
     - Trigger workflows from your UI (buttons, forms, modals)
     - Build automations visually (call agents, enrichment, email flows)
     - Connect to 1,500\+ apps (Slack, Notion, Calendly, Airtable, and more)
   </Accordion>
-  <Accordion title="How does Make communicate with Lovable?">
-    Lovable sends data (usually as JSON) via **HTTP webhooks** to Make scenarios. Make receives that data, processes it (e.g., calls an API), and can respond back to Lovable.
+  <Accordion title="How does Make communicate with Aippy?">
+    Aippy sends data (usually as JSON) via **HTTP webhooks** to Make scenarios. Make receives that data, processes it (e.g., calls an API), and can respond back to Aippy.
   </Accordion>
   <Accordion title="What are Scenarios in Make?">
     Scenarios are automation workflows. You define:
@@ -309,8 +309,8 @@ Building your own CRM can take months. With **Lovable** and **Make**, you can sh
   <Accordion title="What happens if I exceed my Make plan's operations?">
     Your scenario will pause. Make sends alerts, and you can upgrade or optimize your flows. For this guide, the **free pro plan** from the webinar includes **20,000 operations** — more than enough to prototype.
   </Accordion>
-  <Accordion title="Can I test my Make Scenarios without Lovable?">
-    Yes\! Use **manual data input** in the Webhook or trigger the scenario via Postman or curl. This is great for debugging before connecting to Lovable.
+  <Accordion title="Can I test my Make Scenarios without Aippy?">
+    Yes\! Use **manual data input** in the Webhook or trigger the scenario via Postman or curl. This is great for debugging before connecting to Aippy.
   </Accordion>
 </AccordionGroup>
 
