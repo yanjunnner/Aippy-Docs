@@ -1,0 +1,74 @@
+---
+title: 'Git Commit Message Guide'
+description: 'Best practices for writing clear and effective Git commit messages in English'
+---
+
+# Git Commit Message Guide
+
+Writing clear and effective commit messages is crucial for maintaining a clean and understandable project history. This guide will help you write better commit messages in English.
+
+## Commit Message Format
+
+A commit message should be structured as follows:
+
+```
+<type>: <subject>
+
+[optional body]
+[optional footer]
+```
+
+### Types
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, missing semi-colons, etc)
+- `refactor`: Code refactoring
+- `test`: Adding or modifying tests
+- `chore`: Maintenance tasks
+
+### Subject Line Rules
+
+1. Use imperative mood ("Add" not "Added" or "Adds")
+2. Don't end with a period
+3. Keep it under 50 characters
+4. Capitalize the first letter
+
+### Examples
+
+Good commit messages:
+```
+feat: Add user authentication system
+fix: Resolve payment processing timeout
+docs: Update API documentation
+style: Format code according to style guide
+```
+
+Poor commit messages:
+```
+fixed bug
+updated code
+wip
+added some stuff
+```
+
+## Tips for Writing Good Commit Messages
+
+1. **Be Specific**: Clearly describe what changes were made
+2. **Be Concise**: Keep messages short but meaningful
+3. **Use English**: Write all commit messages in English
+4. **Separate Concerns**: Make separate commits for separate changes
+5. **Reference Issues**: Include issue/ticket numbers when relevant
+
+## When to Commit
+
+- After completing a specific feature or fix
+- When reaching a logical stopping point
+- Before switching to a different task
+- When you want to save your progress
+
+## Additional Resources
+
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
