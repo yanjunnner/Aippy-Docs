@@ -78,19 +78,24 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://aippy.ai",
+          "icon": "globe"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://discord.gg/G94ZAx6gVq",
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Announcements",
+          "href": "https://x.com/aippyai",
+          "icon": "twitter"
+        },
+        {
+          "anchor": "Request Feature",
+          "href": "https://feedback.aippy.ai/",
+          "icon": "rocket"
         }
       ]
     }
