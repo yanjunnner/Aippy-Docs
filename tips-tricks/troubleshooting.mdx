@@ -1263,6 +1263,43 @@ Use the accordions below to identify specific issues and actions:
     - Verify you have the necessary permissions for the repository
     - Ensure two-factor authentication isn't blocking access
   </Accordion>
+  <Accordion title="Git credential issues with osxkeychain">
+    If you're experiencing issues with Git credentials when pushing to GitHub, particularly on macOS with messages related to `git-credential-osxkeychain`, try these solutions:
+
+    #### **Common Git Credential Helper Issues**
+
+    1. **Reset the credential helper cache**:
+       ```bash
+       git credential-osxkeychain erase
+       host=github.com
+       protocol=https
+       [press Enter twice]
+       ```
+
+    2. **Verify your credential helper configuration**:
+       ```bash
+       git config --list | grep credential
+       ```
+       You should see `credential.helper=osxkeychain` in the output.
+
+    3. **Update your credential helper if needed**:
+       ```bash
+       git config --global credential.helper osxkeychain
+       ```
+
+    4. **Check for Xcode command-line tools issues**:
+       If you see errors related to `/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git`, ensure your Xcode command-line tools are properly installed:
+       ```bash
+       xcode-select --install
+       ```
+
+    5. **Use a personal access token instead of password**:
+       GitHub no longer accepts account passwords for Git operations. Generate a [personal access token](https://github.com/settings/tokens) and use it as your password when prompted.
+
+    <Info>
+      After fixing credential issues, you may need to authenticate again on your next Git operation. When prompted, use your GitHub username and personal access token (not password).
+    </Info>
+  </Accordion>
   <Accordion title="Failed Pushes">
     If your push is rejected:
 
