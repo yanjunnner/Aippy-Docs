@@ -3,8 +3,8 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#0095FF",
-    "light": "#1AA3FF",
+    "primary": "#6814DE",
+    "light": "#6814DE",
     "dark": "#0084E6"
   },
   "favicon": "/favicon.svg",
@@ -38,11 +38,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Website",
-          "href": "https://aippy.ai",
-          "icon": "globe"
-        },
-        {
           "anchor": "Community",
           "href": "https://discord.gg/G94ZAx6gVq",
           "icon": "discord"
@@ -73,8 +68,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "APP",
+      "href": "https://aippy.ai"
     }
   },
   "footer": {
