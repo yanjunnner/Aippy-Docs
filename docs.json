@@ -25,52 +25,11 @@
           {
             "group": "Features",
             "pages": [
-              "changelog",
               "user-guides/quickstart",
               "user-guides/messaging-limits",
-              "features/figma-to-lovable",
-              "features/visual-edit",
               "features/knowledge",
-              "features/dev-mode",
-              "features/labs",
               "features/deploy",
-              "tips-tricks/custom-domain",
-              "features/launched"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "integrations/introduction",
-              "integrations/git-integration",
-              "integrations/supabase",
-              "tips-tricks/setting-up-payments",
-              "integrations/resend",
-              "integrations/clerk",
-              "integrations/make",
-              "integrations/replicate",
-              "integrations/ai-integration",
-              "integrations/21stdev-integration"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "tips-tricks/custom-domain"
             ]
           }
         ]
